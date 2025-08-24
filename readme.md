@@ -3,7 +3,7 @@
 ## Giới thiệu tổng quan
 
 
-### [Task 1: DATA REPORT](./task_1/README.md) (click vào để tới task 1)
+### [Task 1: DATA REPORT](./task_1/) (click vào để tới task 1)
 
 **Yêu cầu:** Thiết kế  giao diện để người dùng thực hiện thao tác upload file và truy vấn (xử lý dữ liệu ở client)
 
@@ -15,7 +15,7 @@
 
 ---
 
-### [Task 2: FORM](./task_2/README.md) (click vào để tới task 2)
+### [Task 2: FORM](./task_2/) (click vào để tới task 2)
 
 **Mục tiêu:** Code giao diện (như hình minh hoạ) để **nhập giao dịch** cho cửa hàng xăng.
 
