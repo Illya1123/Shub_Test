@@ -20,6 +20,9 @@ task_3
 - Dùng file **Seed_Du_Lieu.sql** để tạo dữ liệu mẫu
 - File **Queries.sql** là nơi lưu trữ toàn bộ scripts thực hiện yêu cầu của bài **Task 3**
 
+### Ảnh sơ đồ:
+![ảnh sơ đồ](./QuanLyXangDau_2025-08-24T17_36_20.669Z.png)
+
 ### Ảnh demo:
 
 <p align="center">
