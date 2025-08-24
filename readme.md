@@ -61,3 +61,7 @@ Bạn được giao nhiệm vụ thiết kế **hệ CSDL** để quản lý ho�
 - File **`.sql`** chứa **toàn bộ lệnh DDL** (tạo schema) và **các truy vấn** ở trên.
 
 ---
+
+### [Task 4: Data structure & Algorithm](./task_4/) (click vào để tới task 4)
+
+Thực hiện giải quyết vấn đề bằng thuật toán có độ phức tạp theo yêu cầu. Ngôn ngữ lựa chọn là **JavaScript**
