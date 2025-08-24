@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task 1 - Data Table & Utilities
 
-## Getting Started
+### Giới thiệu
+Task này được xây dựng bằng **Next.js 14 + React**, sử dụng **TailwindCSS** và các **shacdnUI** để hiển thị dữ liệu dưới dạng bảng, upload file Excel và hỗ trợ các chức năng lọc thời gian, định dạng tiền tệ.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Cấu trúc thư mục
+```
+task_1
+├── app
+│ ├── _components
+│ │ ├── DataTable.jsx # Bảng hiển thị dữ liệu
+│ │ ├── FileDrop.jsx # Kéo/thả file upload
+│ │ ├── TimeFilter.jsx # Bộ lọc theo thời gian
+│ │ ├── UploadExcel.js # Xử lý file Excel
+│ │
+│ ├── _utils
+│ │ └── FormatCurrency.js # Hàm định dạng tiền tệ
+│ │
+│ ├── fonts
+│ ├── favicon.ico
+│ ├── globals.css # CSS toàn cục
+│ ├── layout.js # Layout chính
+│ └── page.js # Trang hiển thị chính
+│
+├── components
+│ └── ui
+│ ├── button.jsx # Nút bấm tái sử dụng
+│ └── table.jsx # Bảng tái sử dụng
+│
+├── lib
+│ └── utils.js
+│
+├── node_modules
+├── .eslintrc.json
+├── .gitignore
+├── .prettierignore
+├── .prettierrc.json
+├── components.json
+├── jsconfig.json
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Cài đặt dependencies
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Chạy development server
+```
+npm run dev
+```
 
-## Learn More
+### Ảnh demo:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![ảnh demo task 1](./assets/demo.png)

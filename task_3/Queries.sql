@@ -15,7 +15,7 @@ WHERE tx."MaTramXang" = 1
 ORDER BY gd."NgayGiaoDich", gd."GioGiaoDich";
 
 -- Tổng doanh thu theo ngày cho 1 trụ bơm
-SELECT tb."TenTruBom", SUM(ROUND(gd."DonGia"*gd."Quantity",2)) AS "Tổng tiền", gd."NgayGiaoDich"
+SELECT tb."TenTruBom" AS "Tên trụ bơm", SUM(ROUND(gd."DonGia"*gd."Quantity",2)) AS "Tổng tiền", gd."NgayGiaoDich" AS "Ngày giao dịch"
 FROM "GiaoDich" gd
 JOIN "TruBom" tb ON gd."MaTruBom" = tb."MaTruBom"
 -- Nếu muốn lấy trong ngày hôm nay thì bỏ comment bên dưới giúp em ạ
@@ -24,7 +24,7 @@ GROUP BY tb."TenTruBom", gd."NgayGiaoDich"
 ORDER BY gd."NgayGiaoDich"
 
 -- Tổng doanh thu theo ngày cho 1 trạm
-SELECT tx."TenTramXang", SUM(ROUND(gd."DonGia"*gd."Quantity",2)) AS "Doanh thu", gd."NgayGiaoDich"
+SELECT tx."TenTramXang" AS "Tên Trạm Xăng", SUM(ROUND(gd."DonGia"*gd."Quantity",2)) AS "Doanh thu", gd."NgayGiaoDich" AS "Ngày giao dịch"
 FROM "GiaoDich" gd
 JOIN "TruBom" tb ON gd."MaTruBom" = tb."MaTruBom"
 JOIN "TramXang" tx ON tb."MaTramXang" = tx."MaTramXang"

@@ -1,3 +1,5 @@
+
+
 CREATE TYPE "TrangThai_GD" AS ENUM (
 	'Chờ chuyển khoản',
 	'Tiền mặt',

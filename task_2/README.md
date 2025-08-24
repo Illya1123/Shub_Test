@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Task 2 - Form giao dịch
 
-## Getting Started
+## Giới thiệu
+Task này được xây dựng bằng **Next.js + React** và **TailwindCSS**, tập trung vào việc nhập và hiển thị dữ liệu giao dịch (transaction).  
+Ngoài ra dự task còn quản lý dữ liệu **pumpData.json** trong thư mục `public`.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Cấu trúc thư mục
+
+```
+task_2
+├── app
+│ ├── _components
+│ │ ├── CustomField.jsx # Input field tuỳ chỉnh
+│ │ ├── PumpField.jsx # Trường chọn dữ liệu trụ bơm
+│ │ ├── TimeField.jsx # Trường nhập thời gian
+│ │ └── TransactionForm.jsx # Form nhập giao dịch chính
+│ │
+│ ├── fonts
+│ ├── favicon.ico
+│ ├── globals.css # CSS toàn cục
+│ ├── layout.js # Layout chính
+│ └── page.js # Trang hiển thị chính
+│
+├── components
+│ └── ui
+│ └── ... # Các component UI phụ trợ
+│
+├── lib
+│ └── ... # Các hàm tiện ích
+│
+├── public
+│ └── pumpData.json # Dữ liệu mẫu cho thông tin các trụ bơm
+│
+├── node_modules
+├── .eslintrc.json
+├── .gitignore
+├── .prettierignore
+├── .prettierrc.json
+├── components.json
+├── jsconfig.json
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.js
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Cài đặt dependencies
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Chạy development server
+```
+npm run dev
+```
 
-## Learn More
+### Ảnh demo:
 
-To learn more about Next.js, take a look at the following resources:
+![ảnh demo task 2](./assets/form.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Khi validate thiếu:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="center">
+  <img src="./assets/fail_1.png" alt="demo 1" width="45%"/>
+  <img src="./assets/fail_2.png" alt="demo 2" width="45%"/>
+</p>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Khi validate đủ & hợp lệ:
+![ảnh khi cập nhật thành công](./assets/success.png)
